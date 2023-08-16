@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  app:
+    cpus: '1'
+    mem_limit: 512m
+    mem_reservation: 256m
+    container_name: app_whatsapp
+    restart: always
+    build: .
+    ports:
+      - "3000:3000"
